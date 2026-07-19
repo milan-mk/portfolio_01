@@ -1,0 +1,8 @@
+Port/node_modules/
+Port/dist/
+Port/.env
+
+Backend/venv/
+Backend/__pycache__/
+Backend/.env
+Backend/*.pyc
