@@ -3,9 +3,9 @@ import {Icon} from "@iconify/react"
 import { useState } from "react";
 import { Mail, Send } from "lucide-react";
 const socialLinks = [
-    { label: "LinkedIn", url: "https://www.linkedin.com/in/milan-kumar-modak", icon: <Icon icon="line-md:linkedin" width={18} height={18}/> ,displayText:"Milan Kumar Modak" },
-    { label: "GitHub", url: "https://github.com/milan-mk", icon: <Icon icon="line-md:github" width={18} height={18}/>,displayText:"@milan-mk" },
-    { label: "Leetcode", url: "https://leetcode.com/u/Milan__Kumar/", icon: <Icon icon="devicon:leetcode" width={18} height={18}/>,displayText:"Milan__Kumar" },
+    { label: "LinkedIn", url: import.meta.env.VITE_LINKEDIN, icon: <Icon icon="line-md:linkedin" width={18} height={18}/> ,displayText:"Milan Kumar Modak" },
+    { label: "GitHub", url: import.meta.env.VITE_GITHUB, icon: <Icon icon="line-md:github" width={18} height={18}/>,displayText:"@milan-mk" },
+    { label: "Leetcode", url: import.meta.env.VITE_LEETCODE, icon: <Icon icon="devicon:leetcode" width={18} height={18}/>,displayText:"Milan__Kumar" },
 ]
 function Contact() {
 
