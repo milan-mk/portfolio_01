@@ -23,7 +23,7 @@ function About() {
                     </p>
                 </div>
 
-                <button className="flex items-center gap-2 mt-8 border border-accent/40 text-white px-6 py-3 rounded-full font-semibold hover:bg-white/5 transition-colors">
+                <button className="flex items-center gap-2 mt-8 border border-accent/40 text-white px-6 py-3 rounded-full font-semibold hover:bg-white/5  btn-hover">
                     Request Resume
                 </button>
 
@@ -31,7 +31,7 @@ function About() {
                     {Details.map((item) => (
                         <div
                             key={item.label}
-                            className="border border-white/10 rounded-xl p-5 bg-white/5 flex items-center gap-4 min-w-0"
+                            className="card rounded-xl p-5 flex items-center gap-4 min-w-0 btn-hover1"
                         >
                             <div className="min-w-0">
                                 <p className="text-xs text-gray-500 tracking-widest mb-1">{item.label}</p>

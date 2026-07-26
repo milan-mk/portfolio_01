@@ -5,6 +5,7 @@ import {
     SiPlotly, SiJupyter, SiGooglecolab, SiHtml5, SiCss,
     SiJavascript, SiGit, SiGithub, SiLangchain, SiOpenjdk,
 } from "react-icons/si";
+import {Icon} from "@iconify/react";
 
 
 interface skills {
@@ -31,14 +32,14 @@ const categories: skillData[] = [
             {
                 label: "CORE LANGUAGES",
                 skill: [
-                    { title: "JAVA", icon: <SiOpenjdk color="#ED8B00" size={18} /> },
-                    { title: "PYTHON", icon: <SiPython color="#3776AB" size={18} /> },
+                    { title: "JAVA", icon: <Icon icon="devicon:java" width={18} height={18} /> },
+                    { title: "PYTHON", icon: <Icon icon="catppuccin:python" width={18} height={18} /> },
                 ]
             },
             {
-                label:"Data & Query",
+                label:"DATA & QUERY",
                 skill:[
-                    {title:"SQL", icon:<SiMysql color="#4479A1" size={18} />},
+                    {title:"SQL", icon: <Icon icon="logos:mysql" width={18} height={18} />},
                 ]
             },
 
@@ -49,30 +50,52 @@ const categories: skillData[] = [
         icon: <BarChart3 size={20} />,
         groups: [
             {
-                label: "Data Processing",
+                label: "DATA PROCESSING",
                 skill: [
-                    { title: "Pandas", icon: <SiPandas /> },
-                    { title: "Numpy", icon: <SiNumpy /> },
+                    { title: "Pandas", icon: <Icon icon="devicon:pandas" width={18} height={18} /> },
+                    { title: "Numpy", icon: <Icon icon="devicon:numpy" width={18} height={18} /> },
                 ]
             },
             {
-                label: "Visualization",
+                label: "VISUALIZAION",
                 skill: [
-                    { title: "Matplotlib", icon: <SiPlotly size={18} /> },
-                    { title: "Seaborn", icon: <SiPlotly size={18} /> },
+                    { title: "Matplotlib", icon: <Icon icon="devicon:matplotlib" width={18} height={18} /> },
+                    { title: "Seaborn", icon: <Icon icon="devicon:seaborn" width={18} height={18} /> },
                 ]
             },
         ]
     },
     {
         title: "Machine Learning",
-        icon: <Sparkles size={20} />,
+        icon: <Icon icon="carbon:machine-learning-model" width={18} height={18} />,
         groups: [
             {
-                label: "Core",
+                label: "CORE",
                 skill: [
-                    { title: "Scikit-learn", icon: <SiPython /> },
-                    { title: "Predictive Modeling", icon: <SiPython /> }
+                    { title: "Scikit-learn", icon:<Icon icon="devicon:scikitlearn" width={18} height={18} /> },
+                    { title: "Predictive Modeling", icon:<Icon icon="iconoir:learning" width={18} height={18} /> }
+                ]
+            }
+        ]
+    },
+    {
+        title: "Development",
+        icon: <Icon icon="iconoir:learning" width={18} height={18} />,
+        groups: [
+            {
+                label: "FRONTEND",
+                skill: [
+                    { title: "HTML", icon:<Icon icon="logos:html-5" width={18} height={18} /> },
+                    { title: "TailwindCSS",icon:<Icon icon="devicon:tailwindcss" width={18} height={18} />  },
+                    { title: "JavaScript", icon: <Icon icon="catppuccin:javascript" width={18} height={18} /> },
+                ]
+            },
+            {
+                label: "BACKEND",
+                skill: [
+                    { title: "FastApi", icon: <Icon icon="logos:fastapi-icon" width={18} height={18} /> },
+                    { title: "Flask", icon: <Icon icon="marketeq:flask-3" width={18} height={18} /> },
+                    { title: "Express", icon: <Icon icon="griddy-icons:expressjs" width={18} height={18} /> },
                 ]
             }
         ]
@@ -93,7 +116,7 @@ function Skill() {
                     {categories.map((cat) => (
                         <div
                             key={cat.title}
-                            className="border border-white/10 rounded-2xl p-6 bg-white/3 hover:bg-white/6"
+                            className="border card border-white/10 rounded-2xl card p-6 bg-white/3 hover:bg-white/6"
                         >
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="bg-accent/10 text-accent rounded-lg p-2.5">
@@ -111,7 +134,7 @@ function Skill() {
                                         {group.skill.map((skill, sIndex) => (
                                             <span
                                                 key={sIndex}
-                                                className="flex items-center gap-2 text-sm text-gray-200 border border-white/10 rounded-full px-4 py-2 bg-white/5"
+                                                className="flex items-center gap-2 text-sm text-white border border-white/10 rounded-full px-4 py-2 bg-white/5"
                                             >
                                                 {skill.icon}
                                                 {skill.title}

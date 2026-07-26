@@ -5,7 +5,7 @@ function Intro() {
       className="relative min-h-screen flex items-center overflow-hidden bg-black/80"
     >
       {/* Image blended into background on the left */}
-      <div className="absolute left-0 top-0 h-full w-[55%]">
+      <div className="absolute left-0 top-0 h-full w-[55%] ">
         <img
           src="/profile.jpg"
           alt="Milan Kumar"
@@ -37,17 +37,23 @@ function Intro() {
         </p>
 
         <div className="flex gap-4 mt-10">
-          
-          <a  href="#projects"
-            className="bg-white/5 border border-white/20 text-white px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors"
+
+          <a href="#projects"
+            className="bg-white/5 border border-white/20 text-white px-8 py-3 rounded-full font-semibold hover:bg-white/10  btn-hover"
           >
             View Projects
           </a>
-          
-          <a  href="#contact"
-            className="bg-white/5 border border-white/20 text-white px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors"
+
+          <a href="#contact"
+            className="bg-white/5 border border-white/20 text-white px-8 py-3 rounded-full font-semibold hover:bg-white/10  flex justify-center btn-hover"
           >
-            Get In Touch →
+            Get In Touch <lord-icon
+              src="https://cdn.lordicon.com/zllgguxq.json"
+              trigger="hover"
+              colors="primary:#ffffff"
+              style={{ width: "25px", height: "25px" }}>
+            </lord-icon>
+
           </a>
         </div>
       </div>

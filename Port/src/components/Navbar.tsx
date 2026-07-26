@@ -17,7 +17,7 @@ function Navbar() {
         <ul className="hidden md:flex gap-8 text-sm font-medium text-text-muted">
           {NAV_LINKS.map((link) => (
             <li key={link.href}>
-              <a href={link.href} className="hover:text-white transition-colors">
+              <a href={link.href} className="hover:text-white transition-colors hover:underline">
                 {link.label}
               </a>
             </li>
